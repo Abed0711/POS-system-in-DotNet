@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AnyStore
 {
-    public partial class Form1 : Form
+    public partial class frmAdminDashboard : Form
     {
-        public Form1()
+        public frmAdminDashboard()
         {
             InitializeComponent();
         }
@@ -23,6 +23,16 @@ namespace AnyStore
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click_1(object sender, EventArgs e)
         {
 
         }

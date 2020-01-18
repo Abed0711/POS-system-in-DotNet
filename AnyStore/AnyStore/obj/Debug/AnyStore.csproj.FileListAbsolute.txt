@@ -2,8 +2,9 @@ F:\POS\POS-system-in-DotNet\AnyStore\AnyStore\bin\Debug\AnyStore.exe.config
 F:\POS\POS-system-in-DotNet\AnyStore\AnyStore\bin\Debug\AnyStore.exe
 F:\POS\POS-system-in-DotNet\AnyStore\AnyStore\bin\Debug\AnyStore.pdb
 F:\POS\POS-system-in-DotNet\AnyStore\AnyStore\obj\Debug\AnyStore.csprojAssemblyReference.cache
-F:\POS\POS-system-in-DotNet\AnyStore\AnyStore\obj\Debug\AnyStore.Form1.resources
 F:\POS\POS-system-in-DotNet\AnyStore\AnyStore\obj\Debug\AnyStore.Properties.Resources.resources
 F:\POS\POS-system-in-DotNet\AnyStore\AnyStore\obj\Debug\AnyStore.csproj.GenerateResource.cache
 F:\POS\POS-system-in-DotNet\AnyStore\AnyStore\obj\Debug\AnyStore.exe
 F:\POS\POS-system-in-DotNet\AnyStore\AnyStore\obj\Debug\AnyStore.pdb
+F:\POS\POS-system-in-DotNet\AnyStore\AnyStore\obj\Debug\AnyStore.frmUserDashboard.resources
+F:\POS\POS-system-in-DotNet\AnyStore\AnyStore\obj\Debug\AnyStore.frmAdminDashboard.resources

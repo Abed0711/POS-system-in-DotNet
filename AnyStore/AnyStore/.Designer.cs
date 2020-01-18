@@ -1,6 +1,6 @@
 ﻿namespace AnyStore
 {
-    partial class Form1
+    partial class frmAdminDashboard
     {
         /// <summary>
         /// Required designer variable.
@@ -38,6 +38,9 @@
             this.transectionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.IbiAppFName = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
+            this.lblSHead = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.menuStripTop.SuspendLayout();
             this.SuspendLayout();
@@ -75,7 +78,7 @@
             this.transectionsToolStripMenuItem});
             this.menuStripTop.Location = new System.Drawing.Point(0, 0);
             this.menuStripTop.Name = "menuStripTop";
-            this.menuStripTop.Size = new System.Drawing.Size(1883, 30);
+            this.menuStripTop.Size = new System.Drawing.Size(1883, 28);
             this.menuStripTop.TabIndex = 1;
             this.menuStripTop.Text = "menuStrip1";
             // 
@@ -115,7 +118,7 @@
             this.label2.Font = new System.Drawing.Font("Fira Code", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(13, 32);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 15);
+            this.label2.Size = new System.Drawing.Size(56, 17);
             this.label2.TabIndex = 2;
             this.label2.Text = "User :";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -127,22 +130,58 @@
             this.label3.ForeColor = System.Drawing.Color.Green;
             this.label3.Location = new System.Drawing.Point(74, 32);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(39, 15);
+            this.label3.Size = new System.Drawing.Size(40, 17);
             this.label3.TabIndex = 3;
             this.label3.Text = "ABeD";
             // 
-            // Form1
+            // IbiAppFName
+            // 
+            this.IbiAppFName.AutoSize = true;
+            this.IbiAppFName.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IbiAppFName.Location = new System.Drawing.Point(818, 316);
+            this.IbiAppFName.Name = "IbiAppFName";
+            this.IbiAppFName.Size = new System.Drawing.Size(123, 46);
+            this.IbiAppFName.TabIndex = 4;
+            this.IbiAppFName.Text = "BAZAR";
+            this.IbiAppFName.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // lblName
+            // 
+            this.lblName.AutoSize = true;
+            this.lblName.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.Location = new System.Drawing.Point(937, 316);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(124, 46);
+            this.lblName.TabIndex = 5;
+            this.lblName.Text = "STORE";
+            this.lblName.Click += new System.EventHandler(this.label4_Click_1);
+            // 
+            // lblSHead
+            // 
+            this.lblSHead.AutoSize = true;
+            this.lblSHead.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSHead.ForeColor = System.Drawing.Color.MediumSpringGreen;
+            this.lblSHead.Location = new System.Drawing.Point(684, 362);
+            this.lblSHead.Name = "lblSHead";
+            this.lblSHead.Size = new System.Drawing.Size(560, 46);
+            this.lblSHead.TabIndex = 6;
+            this.lblSHead.Text = "Billing And Inventory Management";
+            // 
+            // frmAdminDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1883, 554);
+            this.Controls.Add(this.lblSHead);
+            this.Controls.Add(this.lblName);
+            this.Controls.Add(this.IbiAppFName);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStripTop);
             this.MainMenuStrip = this.menuStripTop;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "Form1";
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "frmAdminDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin DashBoard";
             this.TopMost = true;
@@ -168,6 +207,9 @@
         private System.Windows.Forms.ToolStripMenuItem transectionsToolStripMenuItem;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label IbiAppFName;
+        private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.Label lblSHead;
     }
 }
 
