@@ -47,6 +47,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BazarPosDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BazarPosDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="BLL\userBLL.cs" />
     <Compile Include="DAL\userDAL.cs" />
     <Compile Include="UI\frmUsers.cs">
@@ -88,6 +93,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="BazarPosDataSet.xsc">
+      <DependentUpon>BazarPosDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BazarPosDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BazarPosDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BazarPosDataSet.xss">
+      <DependentUpon>BazarPosDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
