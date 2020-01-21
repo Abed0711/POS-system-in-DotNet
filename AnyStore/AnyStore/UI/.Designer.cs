@@ -87,6 +87,7 @@
             this.usersToolStripMenuItem.Name = "usersToolStripMenuItem";
             this.usersToolStripMenuItem.Size = new System.Drawing.Size(62, 24);
             this.usersToolStripMenuItem.Text = "Users ";
+            this.usersToolStripMenuItem.Click += new System.EventHandler(this.usersToolStripMenuItem_Click);
             // 
             // categoryToolStripMenuItem
             // 
@@ -140,7 +141,7 @@
             this.IbiAppFName.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IbiAppFName.Location = new System.Drawing.Point(818, 316);
             this.IbiAppFName.Name = "IbiAppFName";
-            this.IbiAppFName.Size = new System.Drawing.Size(123, 46);
+            this.IbiAppFName.Size = new System.Drawing.Size(121, 45);
             this.IbiAppFName.TabIndex = 4;
             this.IbiAppFName.Text = "BAZAR";
             this.IbiAppFName.Click += new System.EventHandler(this.label4_Click);
@@ -151,7 +152,7 @@
             this.lblName.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblName.Location = new System.Drawing.Point(937, 316);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(124, 46);
+            this.lblName.Size = new System.Drawing.Size(122, 45);
             this.lblName.TabIndex = 5;
             this.lblName.Text = "STORE";
             this.lblName.Click += new System.EventHandler(this.label4_Click_1);
@@ -163,7 +164,7 @@
             this.lblSHead.ForeColor = System.Drawing.Color.MediumSpringGreen;
             this.lblSHead.Location = new System.Drawing.Point(684, 362);
             this.lblSHead.Name = "lblSHead";
-            this.lblSHead.Size = new System.Drawing.Size(560, 46);
+            this.lblSHead.Size = new System.Drawing.Size(548, 45);
             this.lblSHead.TabIndex = 6;
             this.lblSHead.Text = "Billing And Inventory Management";
             // 
@@ -182,9 +183,8 @@
             this.MainMenuStrip = this.menuStripTop;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmAdminDashboard";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Admin DashBoard";
-            this.TopMost = true;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

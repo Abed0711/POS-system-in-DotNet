@@ -8,3 +8,4 @@ F:\POS\POS-system-in-DotNet\AnyStore\AnyStore\obj\Debug\AnyStore.exe
 F:\POS\POS-system-in-DotNet\AnyStore\AnyStore\obj\Debug\AnyStore.pdb
 F:\POS\POS-system-in-DotNet\AnyStore\AnyStore\obj\Debug\AnyStore.frmUserDashboard.resources
 F:\POS\POS-system-in-DotNet\AnyStore\AnyStore\obj\Debug\AnyStore.frmAdminDashboard.resources
+F:\POS\POS-system-in-DotNet\AnyStore\AnyStore\obj\Debug\AnyStore.txtPassword.resources

@@ -36,5 +36,11 @@ namespace AnyStore
         {
 
         }
+
+        private void usersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            txtPassword users = new txtPassword();
+            users.Show();
+        }
     }
 }
