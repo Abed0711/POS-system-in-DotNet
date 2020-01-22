@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace AnyStore
 {
-    public partial class txtPassword : Form
+    public partial class txtpassword : Form
     {
-        public txtPassword()
+        public txtpassword()
         {
             InitializeComponent();
         }
@@ -55,6 +55,7 @@ namespace AnyStore
             u.email = txtEmail.Text;
             u.username = txtUsername.Text;
             u.contact = txtContact.Text;
+            u.password = txtpass.Text;
             u.address = txtAddress.Text;
             u.gender = cmbgender.Text;
             u.user_type = CmbUserType.Text;

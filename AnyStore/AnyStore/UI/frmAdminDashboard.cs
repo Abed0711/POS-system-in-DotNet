@@ -39,7 +39,7 @@ namespace AnyStore
 
         private void usersToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            txtPassword users = new txtPassword();
+            txtpassword users = new txtpassword();
             users.Show();
         }
     }

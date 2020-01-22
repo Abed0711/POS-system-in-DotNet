@@ -1,6 +1,6 @@
 ﻿namespace AnyStore
 {
-    partial class txtPassword
+    partial class txtpassword
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(txtPassword));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(txtpassword));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBoxClose_Click = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -36,7 +36,7 @@
             this.txtFirstName = new System.Windows.Forms.TextBox();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtpass = new System.Windows.Forms.TextBox();
             this.textuserName = new System.Windows.Forms.Label();
             this.txtContact = new System.Windows.Forms.TextBox();
             this.UserName = new System.Windows.Forms.Label();
@@ -137,15 +137,15 @@
             this.label2.Text = "Contact";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // textBox2
+            // txtpass
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Location = new System.Drawing.Point(139, 382);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(301, 41);
-            this.textBox2.TabIndex = 6;
+            this.txtpass.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtpass.Location = new System.Drawing.Point(139, 382);
+            this.txtpass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtpass.Multiline = true;
+            this.txtpass.Name = "txtpass";
+            this.txtpass.Size = new System.Drawing.Size(301, 41);
+            this.txtpass.TabIndex = 6;
             // 
             // textuserName
             // 
@@ -378,7 +378,7 @@
             this.btnDelete.Text = "DELETE";
             this.btnDelete.UseVisualStyleBackColor = false;
             // 
-            // txtPassword
+            // txtpassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -405,7 +405,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtContact);
             this.Controls.Add(this.UserName);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtpass);
             this.Controls.Add(this.textuserName);
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.txtFirstName);
@@ -413,7 +413,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "txtPassword";
+            this.Name = "txtpassword";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Users";
             this.Load += new System.EventHandler(this.frmUsers_Load);
@@ -435,7 +435,7 @@
         private System.Windows.Forms.TextBox txtFirstName;
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtpass;
         private System.Windows.Forms.Label textuserName;
         private System.Windows.Forms.TextBox txtContact;
         private System.Windows.Forms.Label UserName;

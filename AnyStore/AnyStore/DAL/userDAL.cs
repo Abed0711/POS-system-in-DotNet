@@ -49,7 +49,7 @@ namespace AnyStore.DAL
             SqlConnection conn = new SqlConnection(myconnstrng);
             try
             {
-                String sql = "INSERT INTO tabl_users (first_name,last_name,email,username,password,contact,address,gender,user_type,added_date,added_by) VALUES (@first_name,@last_name,@email,@username,@password,@contact,@address,@gender,@user_type,@added_date,@added_by)";
+                String sql = "INSERT INTO tabl_users (first_name,last_name,email,username,password,contact,address,gender,user_type,added_date,added_by) VALUES (@first_name,@last_name,@email,@username,'654641NVHG',@contact,@address,@gender,@user_type,@added_date,@added_by)";
                 SqlCommand cmd = new SqlCommand(sql, conn);
 
                 cmd.Parameters.AddWithValue("@first_name", u.first_name);
