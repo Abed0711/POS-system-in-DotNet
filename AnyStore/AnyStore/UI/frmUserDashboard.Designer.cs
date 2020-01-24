@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmUserDashboard));
             this.menuStraipTop = new System.Windows.Forms.MenuStrip();
             this.purchaseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salesFormsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -38,9 +39,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.menuStraipTop.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -83,9 +84,9 @@
             this.lblSHead.AutoSize = true;
             this.lblSHead.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSHead.ForeColor = System.Drawing.Color.MediumSpringGreen;
-            this.lblSHead.Location = new System.Drawing.Point(683, 378);
+            this.lblSHead.Location = new System.Drawing.Point(662, 606);
             this.lblSHead.Name = "lblSHead";
-            this.lblSHead.Size = new System.Drawing.Size(560, 46);
+            this.lblSHead.Size = new System.Drawing.Size(548, 45);
             this.lblSHead.TabIndex = 11;
             this.lblSHead.Text = "Billing And Inventory Management";
             // 
@@ -93,9 +94,9 @@
             // 
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(936, 332);
+            this.lblName.Location = new System.Drawing.Point(915, 560);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(124, 46);
+            this.lblName.Size = new System.Drawing.Size(122, 45);
             this.lblName.TabIndex = 10;
             this.lblName.Text = "STORE";
             // 
@@ -103,9 +104,9 @@
             // 
             this.IbiAppFName.AutoSize = true;
             this.IbiAppFName.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IbiAppFName.Location = new System.Drawing.Point(817, 332);
+            this.IbiAppFName.Location = new System.Drawing.Point(796, 560);
             this.IbiAppFName.Name = "IbiAppFName";
-            this.IbiAppFName.Size = new System.Drawing.Size(123, 46);
+            this.IbiAppFName.Size = new System.Drawing.Size(121, 45);
             this.IbiAppFName.TabIndex = 9;
             this.IbiAppFName.Text = "BAZAR";
             // 
@@ -141,17 +142,6 @@
             this.panel1.Size = new System.Drawing.Size(1800, 55);
             this.panel1.TabIndex = 12;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Fira Code", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(895, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(180, 21);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Developed By ABED";
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Teal;
@@ -173,10 +163,22 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Developed By ABED";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Fira Code", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(895, 25);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(180, 21);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Developed By ABED";
+            // 
             // frmUserDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.GrayText;
             this.ClientSize = new System.Drawing.Size(1800, 763);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblSHead);
@@ -185,6 +187,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.menuStraipTop);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStraipTop;
             this.Name = "frmUserDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
