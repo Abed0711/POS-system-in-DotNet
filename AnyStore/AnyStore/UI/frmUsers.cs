@@ -157,5 +157,26 @@ namespace AnyStore
         {
 
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            u.id = Convert.ToInt32(txtUserID.Text);
+
+            bool success = dal.Delete(u);
+
+            if (success == true)
+            {
+                MessageBox.Show("User Deleted successfully");
+                clear();
+            }
+            else
+            {
+                MessageBox.Show("Failed to delete User");
+            }
+
+            DataTable dt = dal.Select();
+            dgvUsers.DataSource = dt;
+
+        }
     }
 }

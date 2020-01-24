@@ -145,7 +145,7 @@ namespace AnyStore.DAL
 
             try
             {
-                string sql = "DELETE FROM tbl_users WHERE id=@id";
+                string sql = "DELETE FROM tabl_users WHERE id=@id";
                 SqlCommand cmd = new SqlCommand(sql, conn);
 
                 cmd.Parameters.AddWithValue("@id", u.id);
