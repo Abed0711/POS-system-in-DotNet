@@ -152,5 +152,10 @@ namespace AnyStore
             cmbgender.Text = dgvUsers.Rows[rowIndex].Cells[8].Value.ToString();
             CmbUserType.Text = dgvUsers.Rows[rowIndex].Cells[9].Value.ToString();
         }
+
+        private void UserName_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

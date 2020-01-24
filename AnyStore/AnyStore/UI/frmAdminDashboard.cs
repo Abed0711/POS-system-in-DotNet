@@ -47,5 +47,10 @@ namespace AnyStore
         {
 
         }
+
+        private void menuStripTop_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 }

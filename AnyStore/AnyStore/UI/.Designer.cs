@@ -71,6 +71,7 @@
             // 
             // menuStripTop
             // 
+            this.menuStripTop.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
             this.menuStripTop.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStripTop.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.usersToolStripMenuItem,
@@ -81,9 +82,11 @@
             this.menuStripTop.Location = new System.Drawing.Point(0, 0);
             this.menuStripTop.Name = "menuStripTop";
             this.menuStripTop.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
+            this.menuStripTop.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
             this.menuStripTop.Size = new System.Drawing.Size(1883, 28);
             this.menuStripTop.TabIndex = 1;
             this.menuStripTop.Text = "menuStrip1";
+            this.menuStripTop.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStripTop_ItemClicked);
             // 
             // usersToolStripMenuItem
             // 
@@ -143,7 +146,7 @@
             this.lblSHead.AutoSize = true;
             this.lblSHead.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSHead.ForeColor = System.Drawing.Color.MediumSpringGreen;
-            this.lblSHead.Location = new System.Drawing.Point(667, 278);
+            this.lblSHead.Location = new System.Drawing.Point(675, 423);
             this.lblSHead.Name = "lblSHead";
             this.lblSHead.Size = new System.Drawing.Size(548, 45);
             this.lblSHead.TabIndex = 14;
@@ -153,7 +156,7 @@
             // 
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(920, 232);
+            this.lblName.Location = new System.Drawing.Point(928, 377);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(122, 45);
             this.lblName.TabIndex = 13;
@@ -163,7 +166,7 @@
             // 
             this.IbiAppFName.AutoSize = true;
             this.IbiAppFName.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IbiAppFName.Location = new System.Drawing.Point(801, 232);
+            this.IbiAppFName.Location = new System.Drawing.Point(809, 377);
             this.IbiAppFName.Name = "IbiAppFName";
             this.IbiAppFName.Size = new System.Drawing.Size(121, 45);
             this.IbiAppFName.TabIndex = 12;
@@ -184,7 +187,7 @@
             this.Controls.Add(this.menuStripTop);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStripTop;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmAdminDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Admin DashBoard";
