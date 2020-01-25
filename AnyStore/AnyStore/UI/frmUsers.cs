@@ -178,5 +178,22 @@ namespace AnyStore
             dgvUsers.DataSource = dt;
 
         }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            string keywords = txtSearch.Text;
+
+            if (keywords != null)
+            {
+                DataTable dt = dal.Search(keywords);
+                dgvUsers.DataSource = dt;
+            }
+            else
+            {
+                DataTable dt = dal.Select();
+                dgvUsers.DataSource = dt;
+            }
+        }
+
     }
 }
