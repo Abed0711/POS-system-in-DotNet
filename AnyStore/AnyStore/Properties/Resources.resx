@@ -124,14 +124,14 @@
   <data name="56" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\56.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="cooltext347168230410032" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cooltext347168230410032.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="82695778_2367823843456846_1310132387270623232_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\82695778_2367823843456846_1310132387270623232_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="128" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cooltext347321540101254" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cooltext347321540101254.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="propic" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\propic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -139,10 +139,16 @@
   <data name="goods" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\goods.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cooltext347168230410032" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cooltext347168230410032.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="log" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\log.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cooltext347321540101254" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cooltext347321540101254.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="s" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\s.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="s1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\s1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
