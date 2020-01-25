@@ -40,6 +40,29 @@ namespace AnyStore.UI
             if (sucess == true)
             {
                 MessageBox.Show("Login Successfull");
+
+                switch (l.user_type)
+                {
+                    case "Admin":
+                        {
+                            frmAdminDashboard admin = new frmAdminDashboard();
+                            admin.Show();
+                            this.Hide();
+                        }
+                        break;
+                    case "User":
+                        {
+                            frmUserDashboard user = new frmUserDashboard();
+                            user.Show();
+                            this.Hide();
+                        }
+                        break;
+                    default:
+                        {
+
+                        }
+                        break;
+                }
             }
 
             else

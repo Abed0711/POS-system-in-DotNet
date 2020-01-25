@@ -193,6 +193,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "User Dashboard";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmUserDashboard_FormClosed);
             this.menuStraipTop.ResumeLayout(false);
             this.menuStraipTop.PerformLayout();
             this.panel1.ResumeLayout(false);
