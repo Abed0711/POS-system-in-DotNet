@@ -36,7 +36,7 @@
             this.lblSHead = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
             this.IbiAppFName = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblLoggedInUser = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -56,27 +56,27 @@
             this.inventoryToolStripMenuItem});
             this.menuStraipTop.Location = new System.Drawing.Point(0, 0);
             this.menuStraipTop.Name = "menuStraipTop";
-            this.menuStraipTop.Size = new System.Drawing.Size(1800, 28);
+            this.menuStraipTop.Size = new System.Drawing.Size(1800, 30);
             this.menuStraipTop.TabIndex = 0;
             this.menuStraipTop.Text = "menuStrip1";
             // 
             // purchaseToolStripMenuItem
             // 
             this.purchaseToolStripMenuItem.Name = "purchaseToolStripMenuItem";
-            this.purchaseToolStripMenuItem.Size = new System.Drawing.Size(81, 24);
+            this.purchaseToolStripMenuItem.Size = new System.Drawing.Size(81, 26);
             this.purchaseToolStripMenuItem.Text = "Purchase";
             // 
             // salesFormsToolStripMenuItem
             // 
             this.salesFormsToolStripMenuItem.Name = "salesFormsToolStripMenuItem";
-            this.salesFormsToolStripMenuItem.Size = new System.Drawing.Size(57, 24);
+            this.salesFormsToolStripMenuItem.Size = new System.Drawing.Size(57, 26);
             this.salesFormsToolStripMenuItem.Text = "Sales";
             this.salesFormsToolStripMenuItem.Click += new System.EventHandler(this.salesFormsToolStripMenuItem_Click);
             // 
             // inventoryToolStripMenuItem
             // 
             this.inventoryToolStripMenuItem.Name = "inventoryToolStripMenuItem";
-            this.inventoryToolStripMenuItem.Size = new System.Drawing.Size(84, 24);
+            this.inventoryToolStripMenuItem.Size = new System.Drawing.Size(84, 26);
             this.inventoryToolStripMenuItem.Text = "Inventory";
             // 
             // lblSHead
@@ -110,26 +110,26 @@
             this.IbiAppFName.TabIndex = 9;
             this.IbiAppFName.Text = "BAZAR";
             // 
-            // label3
+            // lblLoggedInUser
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Fira Code", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Green;
-            this.label3.Location = new System.Drawing.Point(73, 48);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 17);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "ABeD";
+            this.lblLoggedInUser.AutoSize = true;
+            this.lblLoggedInUser.Font = new System.Drawing.Font("Fira Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLoggedInUser.ForeColor = System.Drawing.Color.Aquamarine;
+            this.lblLoggedInUser.Location = new System.Drawing.Point(73, 48);
+            this.lblLoggedInUser.Name = "lblLoggedInUser";
+            this.lblLoggedInUser.Size = new System.Drawing.Size(0, 24);
+            this.lblLoggedInUser.TabIndex = 8;
+            this.lblLoggedInUser.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Fira Code", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Fira Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(12, 48);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 17);
+            this.label2.Size = new System.Drawing.Size(70, 24);
             this.label2.TabIndex = 7;
-            this.label2.Text = "User :";
+            this.label2.Text = "User:";
             // 
             // panel1
             // 
@@ -184,7 +184,7 @@
             this.Controls.Add(this.lblSHead);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.IbiAppFName);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lblLoggedInUser);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.menuStraipTop);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -194,6 +194,7 @@
             this.Text = "User Dashboard";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmUserDashboard_FormClosed);
+            this.Load += new System.EventHandler(this.frmUserDashboard_Load);
             this.menuStraipTop.ResumeLayout(false);
             this.menuStraipTop.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -214,7 +215,7 @@
         private System.Windows.Forms.Label lblSHead;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label IbiAppFName;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblLoggedInUser;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
