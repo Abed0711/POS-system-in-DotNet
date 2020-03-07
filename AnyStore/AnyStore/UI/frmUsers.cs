@@ -1,5 +1,6 @@
 ﻿using AnyStore.BLL;
 using AnyStore.DAL;
+using AnyStore.UI;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -50,6 +51,8 @@ namespace AnyStore
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            string loggedUser = frmLogin.loggedIn;
+
             u.first_name = txtFirstName.Text;
             u.last_name = txtLastName.Text;
             u.email = txtEmail.Text;
@@ -60,7 +63,11 @@ namespace AnyStore
             u.gender = cmbgender.Text;
             u.user_type = CmbUserType.Text;
             u.added_date = DateTime.Now;
-            u.added_by = 1;
+
+            userBLL usr = dal.GetIDFromUsername(loggedUser);
+
+
+            u.added_by = usr.id;
 
             bool success = dal.Insert(u);
 
@@ -195,5 +202,9 @@ namespace AnyStore
             }
         }
 
+        private void txtFirstName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
