@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AnyStore.DAL{
+namespace AnyStore.DAL {
     class categoriesDAL
     {
         //static string for database connection string
@@ -25,8 +25,8 @@ namespace AnyStore.DAL{
             {
                 // Writing SQL query to get all the data from database
                 string sql = "SELECT*FROM tbl_categories";
-                SqlCommand cmd = new SqlCommand();
-                SqlDataAdapter adapter = new SqlDataAdapter();
+                SqlCommand cmd = new SqlCommand(sql,conn);
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                 //Open database connection
                 conn.Open();
 
@@ -72,7 +72,7 @@ namespace AnyStore.DAL{
                 conn.Open();
                 int rows = cmd.ExecuteNonQuery();
                 // if the query is executed successfully then its value will be greater than 0 else it will be less than 0
-                if(rows>)
+                if (rows > 0)
                 {
                     // Query Executed Successfully
                     isSucces = true;
@@ -83,7 +83,7 @@ namespace AnyStore.DAL{
                     isSucces = false;
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
 
@@ -97,6 +97,102 @@ namespace AnyStore.DAL{
             return isSucces;
         }
         #endregion
+        #region Update Method
+        public bool Update(categoriesBLL c)
+        {
+            //Creating Boolean variable and set its default value to false
+            bool isSuccess = false;
+            //Creating SQl Connection
+            SqlConnection conn = new SqlConnection(myconnstrng);
+            try
+            {
+                //Query to Update Category
+                string sql = "UPDATE tbl_categories SET title=@title,description=@description,added_date=@added_date,added_by=@added_by WHERE id=@id";
+
+                //SQL Command to pass the value on Sql Query
+                SqlCommand cmd = new SqlCommand(sql, conn);
+
+                //Passing Value usinf cmd
+                cmd.Parameters.AddWithValue("@title", c.title);
+                cmd.Parameters.AddWithValue("@description", c.description);
+                cmd.Parameters.AddWithValue("@added_date", c.added_date);
+                cmd.Parameters.AddWithValue("@added_by", c.added_by);
+                cmd.Parameters.AddWithValue("@id", c.id);
+                //Open Database Connection
+                conn.Open();
+                // Create INT Variable to execute query
+                int rows = cmd.ExecuteNonQuery();
+                //if the query is successfully executed then the value will be greater than zero
+                if (rows > 0)
+                {
+                    //Query Executed Successfully
+                    isSuccess = true;
+
+                }
+                else
+                {
+                    //Failed to execute
+                    isSuccess = false;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+
+            }
+            return isSuccess;
+        }
+        #endregion
+        #region Delete Category Method
+        public bool Delete(categoriesBLL c)
+        {
+            // Cretating boolean varibale and set its value to false
+            bool isSuccess = false;
+            SqlConnection conn = new SqlConnection(myconnstrng);
+            try
+            {
+                // Sql Query to Delete from database
+                string sql = "DELETE FROM tbl_categories WHERE id=@id";
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                //Passing the value using cmd
+                cmd.Parameters.AddWithValue("@id", c.id);
+                //Open SqlConnection
+                conn.Open();
+                int rows = cmd.ExecuteNonQuery();
+
+                if (rows > 0)
+                {
+                    isSuccess = true;
+                }
+                else
+                {
+                    isSuccess = false;
+                }
+
+
+
+               
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+
+            }
+            finally
+            {
+                //closing Database Connection
+                conn.Close();
+            }
+            return isSuccess;
+            //#endregion
+        }
+        # endregion 
 
     }
 }

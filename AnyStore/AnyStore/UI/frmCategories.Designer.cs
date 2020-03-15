@@ -37,16 +37,16 @@
             this.lblDescription = new System.Windows.Forms.Label();
             this.txtCategoryID = new System.Windows.Forms.TextBox();
             this.txtTitle = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtDescription = new System.Windows.Forms.TextBox();
             this.btnADD = new System.Windows.Forms.Button();
             this.btnUPDATE = new System.Windows.Forms.Button();
             this.btnDELETE = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvCategories = new System.Windows.Forms.DataGridView();
             this.lblSearch = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose_Click)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCategories)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -130,13 +130,13 @@
             this.txtTitle.Size = new System.Drawing.Size(237, 25);
             this.txtTitle.TabIndex = 6;
             // 
-            // textBox1
+            // txtDescription
             // 
-            this.textBox1.Location = new System.Drawing.Point(106, 245);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(237, 152);
-            this.textBox1.TabIndex = 7;
+            this.txtDescription.Location = new System.Drawing.Point(106, 245);
+            this.txtDescription.Multiline = true;
+            this.txtDescription.Name = "txtDescription";
+            this.txtDescription.Size = new System.Drawing.Size(237, 152);
+            this.txtDescription.TabIndex = 7;
             // 
             // btnADD
             // 
@@ -149,6 +149,7 @@
             this.btnADD.TabIndex = 8;
             this.btnADD.Text = "ADD";
             this.btnADD.UseVisualStyleBackColor = false;
+            this.btnADD.Click += new System.EventHandler(this.btnADD_Click);
             // 
             // btnUPDATE
             // 
@@ -161,6 +162,7 @@
             this.btnUPDATE.TabIndex = 9;
             this.btnUPDATE.Text = "UPDATE";
             this.btnUPDATE.UseVisualStyleBackColor = false;
+            this.btnUPDATE.Click += new System.EventHandler(this.btnUPDATE_Click);
             // 
             // btnDELETE
             // 
@@ -173,14 +175,17 @@
             this.btnDELETE.TabIndex = 10;
             this.btnDELETE.Text = "DELETE";
             this.btnDELETE.UseVisualStyleBackColor = false;
+            this.btnDELETE.Click += new System.EventHandler(this.btnDELETE_Click);
             // 
-            // dataGridView1
+            // dgvCategories
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(403, 161);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(448, 236);
-            this.dataGridView1.TabIndex = 11;
+            this.dgvCategories.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCategories.Location = new System.Drawing.Point(403, 161);
+            this.dgvCategories.Name = "dgvCategories";
+            this.dgvCategories.Size = new System.Drawing.Size(448, 236);
+            this.dgvCategories.TabIndex = 11;
+            this.dgvCategories.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dgvCategories.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvCategories_RowHeaderMouseClick);
             // 
             // lblSearch
             // 
@@ -192,13 +197,14 @@
             this.lblSearch.TabIndex = 12;
             this.lblSearch.Text = "Search";
             // 
-            // textBox2
+            // txtSearch
             // 
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(456, 91);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(395, 25);
-            this.textBox2.TabIndex = 13;
+            this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.Location = new System.Drawing.Point(456, 91);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(395, 25);
+            this.txtSearch.TabIndex = 13;
+            this.txtSearch.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // frmCategories
             // 
@@ -208,13 +214,13 @@
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1046, 486);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.lblSearch);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvCategories);
             this.Controls.Add(this.btnDELETE);
             this.Controls.Add(this.btnUPDATE);
             this.Controls.Add(this.btnADD);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtDescription);
             this.Controls.Add(this.txtTitle);
             this.Controls.Add(this.txtCategoryID);
             this.Controls.Add(this.lblDescription);
@@ -229,7 +235,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose_Click)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCategories)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -245,12 +251,12 @@
         private System.Windows.Forms.Label lblDescription;
         private System.Windows.Forms.TextBox txtCategoryID;
         private System.Windows.Forms.TextBox txtTitle;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtDescription;
         private System.Windows.Forms.Button btnADD;
         private System.Windows.Forms.Button btnUPDATE;
         private System.Windows.Forms.Button btnDELETE;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvCategories;
         private System.Windows.Forms.Label lblSearch;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtSearch;
     }
 }

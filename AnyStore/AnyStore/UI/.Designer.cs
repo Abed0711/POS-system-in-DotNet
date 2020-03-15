@@ -62,12 +62,12 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(336, 19);
+            this.label1.Location = new System.Drawing.Point(312, 10);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(156, 17);
+            this.label1.Size = new System.Drawing.Size(321, 17);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Developed By Mahdi";
+            this.label1.Text = "                                 Developed By Mahdi";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // menuStripTop
@@ -154,7 +154,7 @@
             this.lblSHead.AutoSize = true;
             this.lblSHead.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSHead.ForeColor = System.Drawing.Color.MediumSpringGreen;
-            this.lblSHead.Location = new System.Drawing.Point(246, 219);
+            this.lblSHead.Location = new System.Drawing.Point(297, 232);
             this.lblSHead.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSHead.Name = "lblSHead";
             this.lblSHead.Size = new System.Drawing.Size(446, 37);
@@ -165,7 +165,7 @@
             // 
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(481, 167);
+            this.lblName.Location = new System.Drawing.Point(525, 167);
             this.lblName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(99, 37);
@@ -176,7 +176,7 @@
             // 
             this.IbiAppFName.AutoSize = true;
             this.IbiAppFName.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IbiAppFName.Location = new System.Drawing.Point(364, 167);
+            this.IbiAppFName.Location = new System.Drawing.Point(412, 167);
             this.IbiAppFName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.IbiAppFName.Name = "IbiAppFName";
             this.IbiAppFName.Size = new System.Drawing.Size(98, 37);

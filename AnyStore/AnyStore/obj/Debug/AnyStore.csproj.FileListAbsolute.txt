@@ -24,3 +24,17 @@ C:\Users\Mahdi Ihsan\Downloads\Compressed\POS-system-in-DotNet-master\POS-system
 C:\Users\Mahdi Ihsan\Downloads\Compressed\POS-system-in-DotNet-master\POS-system-in-DotNet-master\AnyStore\AnyStore\obj\Debug\AnyStore.exe
 C:\Users\Mahdi Ihsan\Downloads\Compressed\POS-system-in-DotNet-master\POS-system-in-DotNet-master\AnyStore\AnyStore\obj\Debug\AnyStore.pdb
 C:\Users\Mahdi Ihsan\Downloads\Compressed\POS-system-in-DotNet-master\POS-system-in-DotNet-master\AnyStore\AnyStore\obj\Debug\AnyStore.UI.Form2.resources
+C:\Users\Mahdi Ihsan\Desktop\POS-system-in-DotNet\AnyStore\AnyStore\obj\Debug\AnyStore.csprojAssemblyReference.cache
+C:\Users\Mahdi Ihsan\Desktop\POS-system-in-DotNet\AnyStore\AnyStore\obj\Debug\AnyStore.UI.Form2.resources
+C:\Users\Mahdi Ihsan\Desktop\POS-system-in-DotNet\AnyStore\AnyStore\obj\Debug\AnyStore.UI.frmCategories.resources
+C:\Users\Mahdi Ihsan\Desktop\POS-system-in-DotNet\AnyStore\AnyStore\obj\Debug\AnyStore.UI.frmLogin.resources
+C:\Users\Mahdi Ihsan\Desktop\POS-system-in-DotNet\AnyStore\AnyStore\obj\Debug\AnyStore.txtpassword.resources
+C:\Users\Mahdi Ihsan\Desktop\POS-system-in-DotNet\AnyStore\AnyStore\obj\Debug\AnyStore.frmAdminDashboard.resources
+C:\Users\Mahdi Ihsan\Desktop\POS-system-in-DotNet\AnyStore\AnyStore\obj\Debug\AnyStore.frmUserDashboard.resources
+C:\Users\Mahdi Ihsan\Desktop\POS-system-in-DotNet\AnyStore\AnyStore\obj\Debug\AnyStore.Properties.Resources.resources
+C:\Users\Mahdi Ihsan\Desktop\POS-system-in-DotNet\AnyStore\AnyStore\obj\Debug\AnyStore.csproj.GenerateResource.cache
+C:\Users\Mahdi Ihsan\Desktop\POS-system-in-DotNet\AnyStore\AnyStore\obj\Debug\AnyStore.exe
+C:\Users\Mahdi Ihsan\Desktop\POS-system-in-DotNet\AnyStore\AnyStore\obj\Debug\AnyStore.pdb
+C:\Users\Mahdi Ihsan\Desktop\POS-system-in-DotNet\AnyStore\AnyStore\bin\Debug\AnyStore.exe.config
+C:\Users\Mahdi Ihsan\Desktop\POS-system-in-DotNet\AnyStore\AnyStore\bin\Debug\AnyStore.exe
+C:\Users\Mahdi Ihsan\Desktop\POS-system-in-DotNet\AnyStore\AnyStore\bin\Debug\AnyStore.pdb
