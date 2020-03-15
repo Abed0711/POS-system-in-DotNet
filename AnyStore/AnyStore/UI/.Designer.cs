@@ -60,11 +60,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Fira Code", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(895, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(180, 21);
+            this.label1.Size = new System.Drawing.Size(182, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Developed By ABED";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -102,6 +102,7 @@
             this.categoryToolStripMenuItem.Name = "categoryToolStripMenuItem";
             this.categoryToolStripMenuItem.Size = new System.Drawing.Size(112, 36);
             this.categoryToolStripMenuItem.Text = "Category";
+            this.categoryToolStripMenuItem.Click += new System.EventHandler(this.categoryToolStripMenuItem_Click);
             // 
             // productsToolStripMenuItem
             // 
@@ -127,10 +128,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Fira Code", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(12, 59);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 32);
+            this.label2.Size = new System.Drawing.Size(95, 32);
             this.label2.TabIndex = 2;
             this.label2.Text = "User :";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -138,7 +139,7 @@
             // lblLoggedInUser
             // 
             this.lblLoggedInUser.AutoSize = true;
-            this.lblLoggedInUser.Font = new System.Drawing.Font("Fira Code", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLoggedInUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLoggedInUser.ForeColor = System.Drawing.Color.MediumSpringGreen;
             this.lblLoggedInUser.Location = new System.Drawing.Point(129, 59);
             this.lblLoggedInUser.Name = "lblLoggedInUser";
