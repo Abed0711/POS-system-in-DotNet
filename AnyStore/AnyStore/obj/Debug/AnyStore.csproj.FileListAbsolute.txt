@@ -38,3 +38,4 @@ C:\Users\Mahdi Ihsan\Desktop\POS-system-in-DotNet\AnyStore\AnyStore\obj\Debug\An
 C:\Users\Mahdi Ihsan\Desktop\POS-system-in-DotNet\AnyStore\AnyStore\bin\Debug\AnyStore.exe.config
 C:\Users\Mahdi Ihsan\Desktop\POS-system-in-DotNet\AnyStore\AnyStore\bin\Debug\AnyStore.exe
 C:\Users\Mahdi Ihsan\Desktop\POS-system-in-DotNet\AnyStore\AnyStore\bin\Debug\AnyStore.pdb
+C:\Users\Mahdi Ihsan\Desktop\POS-system-in-DotNet\AnyStore\AnyStore\obj\Debug\AnyStore.UI.frmProducts.resources

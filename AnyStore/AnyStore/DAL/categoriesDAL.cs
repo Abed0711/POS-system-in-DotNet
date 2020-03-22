@@ -192,7 +192,41 @@ namespace AnyStore.DAL {
             return isSuccess;
             //#endregion
         }
-        # endregion 
+        #endregion
+        #region Method for search Functionality
+        public DataTable Search(String keywords)
+        {
+            //Sql Connection For Database Connection
+            SqlConnection conn = new SqlConnection(myconnstrng);
+            // creating data Table to hold the data from database temporarily
+            DataTable dt = new DataTable();
+            try
+            {
+                //Sql Query to Search Categories from Databases
+                String sql = "SELECT *FROM tbl_categories WHERE id LIKE'%"+keywords+"%'OR title LIKE'%"+keywords+"%'Or description LIKE'%"+keywords+"%'";
+                //Creating SQL Command To Execute the query
+                SqlCommand cmd = new SqlCommand(sql,conn);
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+
+                //Open databaseConnection
+                conn.Open();
+                //Passing values from adapter to data Table dt
+                adapter.Fill(dt);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+
+            }
+            return dt;
+
+        }
+
+        #endregion
 
     }
 }

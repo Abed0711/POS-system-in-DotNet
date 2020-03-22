@@ -72,5 +72,12 @@ namespace AnyStore
             category.Show();
            
         }
+
+        private void productsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmProducts product = new frmProducts();
+            product.Show();
+
+        }
     }
 }

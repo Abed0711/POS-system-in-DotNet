@@ -173,5 +173,26 @@ namespace AnyStore.UI
             dgvCategories.DataSource = dt;
 
         }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            //get the keywords
+            string keywords = txtSearch.Text;
+            //File the categories based on keywords
+            if (keywords!=null)
+            {
+                //Use search Method to Display category
+                DataTable dt = dal.Search(keywords);
+                dgvCategories.DataSource = dt;
+            }
+            else
+            {
+                //use the select method to display all categories
+                DataTable dt = dal.Select();
+                dgvCategories.DataSource = dt; 
+
+            }
+
+        }
     }
 }
