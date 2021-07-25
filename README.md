@@ -7,5 +7,5 @@ This Billing and Inventory Management System in windows form application using C
 <br>5. Print Bill After Purchase or Sales
 
 <p align="center">
-  <img src="https://github.com/Abed0711/POS-system-in-DotNet/blob/master/1.JPG" width="350" alt="accessibility text">
+  <img src="https://github.com/Abed0711/POS-system-in-DotNet/blob/master/1.JPG" width="1000" alt="accessibility text">
 </p>
